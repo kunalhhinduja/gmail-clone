@@ -3,6 +3,17 @@
   overflow: scroll;
 }
 
+/* To hide scrollbar from Chrome, Opera and Safari*/
+.emailList::-webkit-scrollbar {
+  display: none;
+}
+
+/* To hide scrollbar from Microsoft Edge and Firefox*/
+.emailList {
+  -ms-overflow-style: none; /* For Microsoft Edge*/
+  scrollbar-width: none; /*For Firefox*/
+}
+
 .emailList-settings {
   position: sticky;
   top: 0;
@@ -20,4 +31,8 @@
   border-bottom: 1px solid #f5f5f5;
   background-color: #fff;
   z-index: 100;
+}
+
+.emailList {
+  padding-bottom: 8%;
 }
